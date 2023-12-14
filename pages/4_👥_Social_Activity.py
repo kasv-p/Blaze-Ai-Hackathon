@@ -22,6 +22,7 @@ if section == "Community Engagement":
         "It includes a comprehensive collection of code, documentation, and project management resources. "
         "Users, developers, and contributors can access, review, and contribute to the ongoing development of the protocol."
     )
+    st.image("assets/git.png")
 
 elif section == "Online Forums Evaluation":
     st.header("Online Forums Evaluation")

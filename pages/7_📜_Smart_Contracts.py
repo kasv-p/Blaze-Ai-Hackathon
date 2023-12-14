@@ -26,36 +26,36 @@ def display_community_proposals():
 
     st.subheader("Recent Community Proposals")
 
-    st.markdown("1. **Block Size Increase**")
+    st.markdown("**Block Size Increase**")
     st.markdown("   - **Proposal:** Expand the block size from 1 MB to 2 MB.")
     st.markdown("   - **Rationale:** Enhance transaction throughput and reduce confirmation times.")
     st.markdown("   - **Status:** Approved with a 75% majority.")
     st.markdown("   - **Implementation:** Scheduled for February 2024.")
 
-    st.markdown("2. **Governance Model Transformation**")
+    st.markdown("**Governance Model Transformation**")
     st.markdown("   - **Proposal:** Introduce a novel governance model based on Delegated Proof-of-Stake (DPoS).")
     st.markdown("   - **Rationale:** Improve community participation and decision-making processes.")
     st.markdown("   - **Status:** Under review by the core team; ongoing community discussions.")
     st.markdown("   - **Implementation:** Timeline yet to be determined.")
 
-    st.markdown("3. **Token Burning Mechanism**")
+    st.markdown(" **Token Burning Mechanism**")
     st.markdown("   - **Proposal:** Implement a burning mechanism to decrease the total Marker token supply.")
     st.markdown("   - **Rationale:** Enhance the scarcity of Marker tokens, potentially appreciating their value.")
     st.markdown("   - **Status:** Rejected due to community concerns about potential price manipulation.")
 
     st.subheader("Upcoming Community Proposals")
 
-    st.markdown("1. **Lightning Network Integration**")
+    st.markdown(" **Lightning Network Integration**")
     st.markdown("   - **Proposal:** Integrate with the Lightning Network for expedited and cost-effective transactions.")
     st.markdown("   - **Rationale:** Improve scalability and facilitate micropayments.")
     st.markdown("   - **Expected Submission Date:** December 15, 2023.")
 
-    st.markdown("2. **Decentralized Exchange (DEX) Launch**")
+    st.markdown("**Decentralized Exchange (DEX) Launch**")
     st.markdown("   - **Proposal:** Launch a decentralized exchange (DEX) on the Marker blockchain.")
     st.markdown("   - **Rationale:** Provide a secure and trustless platform for trading Marker tokens and other cryptocurrencies.")
     st.markdown("   - **Expected Submission Date:** Early 2024.")
 
-    st.markdown("3. **Privacy-Focused Protocol Development**")
+    st.markdown(" **Privacy-Focused Protocol Development**")
     st.markdown("   - **Proposal:** Fund the development of a privacy-focused protocol for Marker transactions.")
     st.markdown("   - **Rationale:** Enhance user privacy and anonymity.")
     st.markdown("   - **Expected Submission Date:** Q2 2024.")

@@ -7,7 +7,7 @@ st.title("Token Incentives and Associated Risks")
 # Navigation bar
 st.sidebar.title("Navigation")
 
-nav_selection = st.sidebar.selectbox("Go to", [ "Incentives and Staking", "Governance Responsibilities", "Risk Parameters", "Risks and Mitigation", "Conclusion"])
+nav_selection = st.sidebar.selectbox("Go to", [ "Incentives and Staking", "Governance Responsibilities", "Risk Parameters", "Risks and Mitigation"])
 
 # Sections
 intro_text = """
@@ -95,5 +95,5 @@ elif nav_selection == "Risk Parameters":
     st.markdown(risk_parameters_text, unsafe_allow_html=True)
 elif nav_selection == "Risks and Mitigation":
     st.markdown(risks_mitigation_text, unsafe_allow_html=True)
-elif nav_selection=="Conclusion":
-    st.markdown(conclusion_text, unsafe_allow_html=True)
+# elif nav_selection=="Conclusion":
+#     st.markdown(conclusion_text, unsafe_allow_html=True)

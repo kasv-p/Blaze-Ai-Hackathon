@@ -1,11 +1,13 @@
 import streamlit as st
 st.set_page_config(page_title="Governance Mechanisms", page_icon="🗳️")
 st.title("Governance Mechanisms")
+img_tag = '<img src="data:image/png;base64,{}" style="width:10%; height:10%; padding-bottom:2%" alt="Your Image">'
+
 def display_voting_system():
     st.header("Voting System")
-
     st.subheader("Earning Your Say: The Power of Token Holding")
     st.markdown("At the heart of Marker's governance lies a simple yet powerful principle: the more you hold, the more you have to say. Each Marker token, affectionately called 'MKR,' serves as a miniature ballot, granting its holder the right to vote on proposals that impact the very fabric of the MakerDAO ecosystem. This weighted voting system ensures that those with a vested interest in the protocol's success hold greater sway in its direction.")
+    st.image("assets/voting_system.png",width=630)
 
     st.subheader("Delegation: Amplifying Voices, Bridging Gaps")
     st.markdown("Recognizing the diverse nature of its community, Marker incorporates a clever mechanism called 'delegation.' Through delegation, token holders can entrust their voting power to individuals or organizations who align with their values and vision. This not only amplifies the voices of smaller holders but also fosters the emergence of specialized entities that can effectively represent the interests of specific groups within the ecosystem.")
@@ -49,17 +51,21 @@ def display_onchain_voting():
     st.markdown("**MakerDAO:** The MakerDAO platform employs a 'decentralized autonomous organization' (DAO) system, allowing DAI token holders to vote on proposals shaping the Maker protocol.")
     st.markdown("**Tezos:** The Tezos blockchain utilizes 'on-chain governance,' enabling token holders to vote on protocol-altering proposals.")
     st.markdown("**Aragon:** Aragon furnishes tools for constructing decentralized applications (dApps) with integrated on-chain governance.")
-
     st.subheader("Future of On-Chain Voting")
     st.markdown("While on-chain voting confronts existing challenges, its potential to reshape organizational governance is significant. As a relatively new technology, ongoing refinement and widespread adoption hinge on addressing these challenges. Nevertheless, on-chain voting is poised to play a pivotal role in shaping the future of the cryptocurrency market.")
 
 st.sidebar.title("Navigation")
 
 # Sidebar navigation
-selected_section = st.sidebar.selectbox("Go to", ["Voting System", "On-Chain Voting"])
+selected_section = st.sidebar.selectbox("Go to", ["Voting System", "On-Chain Voting","Governance stats"])
 
 # Display content based on selected section
 if selected_section == "Voting System":
     display_voting_system()
 elif selected_section == "On-Chain Voting":
     display_onchain_voting()
+elif selected_section == "Governance stats":
+    st.subheader("Governance Stats")
+    st.image("assets/governance_stats.png",width=650)
+    st.markdown("In this illuminating image, numerical prowess takes center stage, revealing the essence of MakerDAO's governance landscape. Witness the delegate count, MKR delegates, and delegators count – each digit a crucial piece in the decentralized puzzle. These numbers encapsulate the active engagement of community delegates, who play a pivotal role in shaping the MakerDAO ecosystem. Delegators, too, contribute to this dynamic force, amplifying the decentralized influence. This defines the governance strength of MKR DAO tokens, where each count signifies a strategic step towards decentralized financial empowerment.")
+    
