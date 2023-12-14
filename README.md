@@ -1,10 +1,10 @@
 # Blaze Hackathon Streamlit App
 
+You can checkout the app [here](https://blaze-ai-hackathon-sbiazkzrcxg5jg9j9happc.streamlit.app/) as well.
+
 ## Prerequisites
 
 - Python installed (version 3.6 or later)
-
-## Installation
 
 ## Running the Streamlit App
 
