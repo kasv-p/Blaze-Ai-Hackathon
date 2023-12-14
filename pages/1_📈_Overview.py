@@ -5,12 +5,14 @@ import streamlit as st
 mkr_data = {
     "Overview": {
         "Position and Functionality": "Maker (MKR) is a cryptocurrency and a governance token associated with the MakerDAO platform, which operates on the Ethereum blockchain. MakerDAO is a decentralized autonomous organization (DAO) that enables the creation of a stablecoin called DAI.",
-        "Popularity": "As of today, Maker holds the position of #57 in the Coinbase ranking."
+        "Popularity": "As of today, Maker holds the position of #57 in the Coinbase ranking.",
+        "Image":"assets/3.png"
     },
     "Key Metrics": {
         "Market Cap": "₹103.4B",
         "Trading Volume": "₹6.97B",
-        "Price": "₹112,874.91"
+        "Price": "₹112,874.91",
+        "Image":"assets/2.png"
     },
     "Tokenomics": {
         "Token Supply": "Circulating supply: 918,769 coins, Maximum supply: 1,005,577 coins",
@@ -19,8 +21,8 @@ mkr_data = {
     }
 }
 
-st.set_page_config(page_title="Maker (MKR) Cryptocurrency Information", page_icon="📈")
-st.title("Maker (MKR) Cryptocurrency Information")
+st.set_page_config(page_title="Overview", page_icon="📈")
+st.title("Overview")
 
 st.sidebar.title("Navigation")
 section_option = st.sidebar.selectbox("Go to", list(mkr_data.keys()))
